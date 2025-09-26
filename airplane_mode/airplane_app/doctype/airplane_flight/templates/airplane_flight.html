@@ -1,0 +1,63 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="ticket-card blue-ticket">
+    {% set airplane_doc = frappe.get_doc("Airplane", doc.airplane) %}
+    <p><strong>Airline:</strong> {{ airplane_doc.airline }}</p>
+    <div class="route">{{ sourcre_airport }} → {{ destination_airport }}</div>
+    <div class="flight-info">
+        <p>
+            <strong>Departure:</strong> {{ frappe.format(date_of_departure, {'fieldtype': 'Date'}) }},
+            {{ frappe.format(time_of_departure, {'fieldtype': 'Time'}) }}<br>
+            <strong>Duration:</strong> {{ frappe.format(duration, {'fieldtype': 'Duration'}) }}
+        </p>
+        <!-- Add more fields as needed -->
+    </div>
+    <a href="/flight-ticket-web-form" class="book-link">Book This Flight</a>
+</div>
+<style>
+    .blue-ticket {
+        background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);
+        color: #fff;
+        padding: 32px 24px;
+        margin: 32px auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(33, 150, 243, 0.15);
+        max-width: 500px;
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        position: relative;
+    }
+    .blue-ticket h2 {
+        margin: 0 0 16px;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .blue-ticket .route {
+        font-size: 1.2rem;
+        color: #e3f2fd;
+        margin-bottom: 12px;
+        font-weight: 500;
+    }
+    .blue-ticket .flight-info p {
+        color: #e3f2fd;
+        font-size: 1rem;
+        margin: 0 0 14px;
+    }
+    .book-link {
+        display: inline-block;
+        background: #1565c0;
+        color: #fff;
+        padding: 10px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(21, 101, 192, 0.12);
+        transition: background 0.2s;
+        margin-top: 18px;
+    }
+    .book-link:hover {
+        background: #0d47a1;
+    }
+</style>
+{% endblock %}

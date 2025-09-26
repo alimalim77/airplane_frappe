@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Scheduled\"",
+ "creation": "2025-09-23 17:08:45.945744",
+ "date_changed": "date_of_departure",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Airplane Flight",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Departure Ahead!!</p>\n",
+ "message_type": "Markdown",
+ "modified": "2025-09-23 17:10:03.310347",
+ "modified_by": "Administrator",
+ "module": "airplane app",
+ "name": "Flight Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Departs in 24 hours!"
+}
