@@ -7,11 +7,7 @@ app_license = "mit"
 
 
 fixtures = [
-    {"dt": "DocType", "filters": [["name", "=", "Airline"]]},
-    {"dt": "DocType", "filters": [["name", "=", "Airplane Ticket"]]},
-    {"dt": "DocType", "filters": [["name", "=", "Airport"]]},
-    {"dt": "DocType", "filters": [["name", "=", "Airplane"]]},
-    {"dt": "DocType", "filters": [["name", "=", "Flight Passenger"]]},
+    {"dt": "DocType", "filters": [["name", "=", "Airplane Ticket Add-on Type"]]},
 ]
 
 # Apps
