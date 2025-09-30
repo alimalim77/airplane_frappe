@@ -21,11 +21,7 @@ class AirplaneTicket(Document):
         try:
             # Generate a random integer (you can specify a range, e.g., 1 to 100)
             airplane_capacity = self.fetch_airplane_details()
-            alphabet_mapping = [chr(i) for i in range(65, 91)] 
-            person_per_alphabet = airplane_capacity // len(alphabet_mapping)
-
             fieldname = "seats"  # Change to your actual field name
-            initial_value = (alphabet_mapping[0], 1)
 
             if hasattr(self, "seats") and self.seats > airplane_capacity:
                 frappe.throw("No seats available")  
@@ -37,13 +33,40 @@ class AirplaneTicket(Document):
                         setattr(self, fieldname, current_value + 1)
                     else:
                         frappe.errprint(self.seat, self.seats)
-                        setattr(self, fieldname, initial_value)
-                    setattr(self, "seat", alphabet_mapping[current_value//person_per_alphabet] + str((current_value%person_per_alphabet) + 1))
+                        setattr(self, fieldname, 1)
                 else:
-                    setattr(self, fieldname, initial_value)
+                    setattr(self, fieldname, 1)
         except Exception as e:
             frappe.log_error(f"Error in before_insert: {str(e)}", "AirplaneTicket before_insert")
             frappe.throw(f"An error occurred while assigning seat: {str(e)}")
+                
+
+        # try:
+        #     # Generate a random integer (you can specify a range, e.g., 1 to 100)
+        #     airplane_capacity = self.fetch_airplane_details()
+        #     alphabet_mapping = [chr(i) for i in range(65, 91)] 
+        #     person_per_alphabet = airplane_capacity // len(alphabet_mapping)
+
+        #     fieldname = "seats"  # Change to your actual field name
+        #     initial_value = (alphabet_mapping[0], 1)
+
+        #     if hasattr(self, "seats") and self.seats > airplane_capacity:
+        #         frappe.throw("No seats available")  
+        #     else:
+        #         if hasattr(self, fieldname):
+        #             # Get the count of AirplaneTicket records for this flight
+        #             current_value = frappe.db.count('Airplane Tsetattr(self, "seat", alphabet_mapping[current_value//person_per_alphabet] + str((current_value%person_per_alphabet) + 1))icket', filters={'flight': self.flight})
+        #             if current_value is not None:
+        #                 setattr(self, fieldname, current_value + 1)
+        #             else:
+        #                 frappe.errprint(self.seat, self.seats)
+        #                 setattr(self, fieldname, initial_value)
+        #             setattr(self, "seat", alphabet_mapping[current_value//person_per_alphabet] + str((current_value%person_per_alphabet) + 1))
+        #         else:
+        #             setattr(self, fieldname, initial_value)
+        # except Exception as e:
+        #     frappe.log_error(f"Error in before_insert: {str(e)}", "AirplaneTicket before_insert")
+        #     frappe.throw(f"An error occurred while assigning seat: {str(e)}")
 
                 
     def validate(self):
@@ -63,7 +86,6 @@ class AirplaneTicket(Document):
     def on_submit(self):
         if self.status != "Boarded":
             frappe.throw("Wrong status picked")
-        self.status = "Completed"
 
 
     def fetch_airplane_details(self):

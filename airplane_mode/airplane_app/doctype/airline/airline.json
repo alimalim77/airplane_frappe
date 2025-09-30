@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2025-09-17 11:05:55.066815",
@@ -9,7 +10,9 @@
   "airplane_section",
   "founding_year",
   "customer_care_number",
-  "headquarters"
+  "column_break_mljx",
+  "headquarters",
+  "website"
  ],
  "fields": [
   {
@@ -36,17 +39,27 @@
    "in_list_view": 1,
    "label": "Headquarters",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mljx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
+ "is_published_field": "website",
  "links": [
   {
    "link_doctype": "Airplane",
    "link_fieldname": "airline"
   }
  ],
- "modified": "2025-09-26 11:02:47.147735",
+ "modified": "2025-09-27 18:59:38.619272",
  "modified_by": "Administrator",
  "module": "airplane app",
  "name": "Airline",

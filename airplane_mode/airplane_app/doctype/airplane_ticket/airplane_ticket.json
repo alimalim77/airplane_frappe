@@ -134,8 +134,7 @@
    "default": "0",
    "fieldname": "seat",
    "fieldtype": "Data",
-   "label": "Seat ",
-   "read_only": 1
+   "label": "Seat "
   },
   {
    "fieldname": "route",
@@ -161,7 +160,8 @@
    "default": "0",
    "fieldname": "seats",
    "fieldtype": "Int",
-   "label": "Total Seats"
+   "label": "Total Seats",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -170,7 +170,7 @@
  "is_published_field": "is_published_",
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-26 16:58:15.621841",
+ "modified": "2025-09-29 14:57:44.093571",
  "modified_by": "Administrator",
  "module": "airplane app",
  "name": "Airplane Ticket",
