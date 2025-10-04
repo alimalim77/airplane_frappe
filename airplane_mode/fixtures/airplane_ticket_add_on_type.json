@@ -1,0 +1,30 @@
+[
+ {
+  "description": "Veg",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket Add-on Type",
+  "modified": "2025-09-26 11:10:44.632606",
+  "name": "Sandwich"
+ },
+ {
+  "description": "Breakfast",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket Add-on Type",
+  "modified": "2025-09-27 03:09:25.952535",
+  "name": "Bread BUtter"
+ },
+ {
+  "description": "Lunch",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket Add-on Type",
+  "modified": "2025-09-27 03:09:35.235674",
+  "name": "Biryani"
+ },
+ {
+  "description": "Snacks",
+  "docstatus": 0,
+  "doctype": "Airplane Ticket Add-on Type",
+  "modified": "2025-09-27 03:09:50.327835",
+  "name": "Lemon Soup"
+ }
+]

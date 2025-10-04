@@ -7,7 +7,34 @@ app_license = "mit"
 
 
 fixtures = [
-    {"dt": "DocType", "filters": [["name", "=", "Airplane Ticket Add-on Type"]]},
+    "Airplane Ticket Add-on Type",
+    {
+        "dt": "Role",
+        "filters": [["name", "in", [
+            "Airport Authority Personnel",
+            "Fleet Manager",
+            "Travel Agent",
+            "Flight Crew Member"
+        ]]]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [["role", "in", [
+            "Airport Authority Personnel",
+            "Fleet Manager",
+            "Travel Agent",
+            "Flight Crew Member"
+        ]]]
+    },
+    {
+        "dt": "DocPerm",
+        "filters": [["role", "in", [
+            "Airport Authority Personnel",
+            "Fleet Manager",
+            "Travel Agent",
+            "Flight Crew Member"
+        ]]]
+    }
 ]
 
 # Apps
