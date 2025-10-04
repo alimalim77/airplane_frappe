@@ -1,0 +1,32 @@
+[
+ {
+  "airline": "Air Asia",
+  "capacity": 200,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed_": 0,
+  "model": "ER-560",
+  "modified": "2025-09-30 09:42:53.594585",
+  "name": "ER-560"
+ },
+ {
+  "airline": "Air Asia",
+  "capacity": 400,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed_": 0,
+  "model": "ER-900",
+  "modified": "2025-09-30 09:43:04.754352",
+  "name": "ER-900"
+ },
+ {
+  "airline": "Indigo",
+  "capacity": 300,
+  "docstatus": 0,
+  "doctype": "Airplane",
+  "initial_audit_completed_": 0,
+  "model": "SM-305",
+  "modified": "2025-09-26 11:03:43.272557",
+  "name": "SM-305"
+ }
+]

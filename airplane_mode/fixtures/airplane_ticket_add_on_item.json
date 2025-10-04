@@ -1,0 +1,35 @@
+[
+ {
+  "amount": 100.0,
+  "docstatus": 1,
+  "doctype": "Airplane Ticket Add-on Item",
+  "item": "Sandwich",
+  "modified": "2025-09-26 11:11:52.002385",
+  "name": "2ji62u9s30",
+  "parent": "24k5b5ic28-MUM-KOC-00001",
+  "parentfield": "add_ons",
+  "parenttype": "Airplane Ticket"
+ },
+ {
+  "amount": 300.0,
+  "docstatus": 1,
+  "doctype": "Airplane Ticket Add-on Item",
+  "item": "Biryani",
+  "modified": "2025-09-30 10:20:28.336948",
+  "name": "jq1scod1ab",
+  "parent": "24k5b5ic28-MUM-KOC-00026",
+  "parentfield": "add_ons",
+  "parenttype": "Airplane Ticket"
+ },
+ {
+  "amount": 150.0,
+  "docstatus": 1,
+  "doctype": "Airplane Ticket Add-on Item",
+  "item": "Lemon Soup",
+  "modified": "2025-09-30 10:20:28.336948",
+  "name": "jq1np3pjd4",
+  "parent": "24k5b5ic28-MUM-KOC-00026",
+  "parentfield": "add_ons",
+  "parenttype": "Airplane Ticket"
+ }
+]

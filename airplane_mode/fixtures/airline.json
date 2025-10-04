@@ -1,0 +1,22 @@
+[
+ {
+  "customer_care_number": "9876543210",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1980,
+  "headquarters": "Colombo",
+  "modified": "2025-09-27 18:56:10.894832",
+  "name": "Air Asia",
+  "website": "https://www.goindigo.com"
+ },
+ {
+  "customer_care_number": "12345678",
+  "docstatus": 0,
+  "doctype": "Airline",
+  "founding_year": 1930,
+  "headquarters": "Delhi",
+  "modified": "2025-09-27 15:08:51.200600",
+  "name": "Indigo",
+  "website": null
+ }
+]

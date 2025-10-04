@@ -1,0 +1,29 @@
+[
+ {
+  "city": "Mumbai",
+  "code": "MUM",
+  "country": "India",
+  "docstatus": 0,
+  "doctype": "Airport",
+  "modified": "2025-09-26 11:09:41.687801",
+  "name": "Mumbai"
+ },
+ {
+  "city": "Kochi",
+  "code": "KOC",
+  "country": "India",
+  "docstatus": 0,
+  "doctype": "Airport",
+  "modified": "2025-09-26 11:10:05.234642",
+  "name": "Kochi"
+ },
+ {
+  "city": "Ladakh",
+  "code": "LDK",
+  "country": "India",
+  "docstatus": 0,
+  "doctype": "Airport",
+  "modified": "2025-09-30 17:06:52.289119",
+  "name": "Ladakh"
+ }
+]

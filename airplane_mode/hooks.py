@@ -8,6 +8,14 @@ app_license = "mit"
 
 fixtures = [
     "Airplane Ticket Add-on Type",
+    "Airplane",
+    "Airline",
+    "Airplane Flight",
+    "Airplane Ticket",
+    "Airplane Ticket Add-on Item",
+    "Airport",
+    "Flight Passenger",
+    "Seat",
     {
         "dt": "Role",
         "filters": [["name", "in", [
