@@ -10,6 +10,7 @@ from frappe.website.website_generator import WebsiteGenerator
 
 
 class AirplaneTicket(Document):
+    # Added comment
     def before_save(self):
         # Calculate total amount
         total = 0
