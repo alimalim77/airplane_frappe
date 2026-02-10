@@ -15,7 +15,7 @@ class AirplaneTicket(Document):
         total = 0
         for addon in self.add_ons:
             total += addon.amount
-        self.total_amount = total + int(self.flight_ticket)
+        self.total_amount = total + int(self.flight_ticket or 0)
 
     def before_insert(self):
         try:

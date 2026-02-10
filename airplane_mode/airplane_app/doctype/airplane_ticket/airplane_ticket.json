@@ -27,7 +27,8 @@
   "seat",
   "route",
   "is_published_",
-  "seats"
+  "seats",
+  "gate"
  ],
  "fields": [
   {
@@ -162,6 +163,11 @@
    "fieldtype": "Int",
    "label": "Total Seats",
    "read_only": 1
+  },
+  {
+   "fieldname": "gate",
+   "fieldtype": "Data",
+   "label": "Gate"
   }
  ],
  "grid_page_length": 50,
@@ -170,7 +176,7 @@
  "is_published_field": "is_published_",
  "is_submittable": 1,
  "links": [],
- "modified": "2025-10-03 10:20:15.312534",
+ "modified": "2025-10-22 07:53:00.960260",
  "modified_by": "Administrator",
  "module": "airplane app",
  "name": "Airplane Ticket",
@@ -178,6 +184,8 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -185,20 +193,9 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Travel Agent",
    "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Airport Authority Personnel",
-   "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -209,6 +206,18 @@
    "read": 1,
    "report": 1,
    "role": "Flight Crew Member",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
    "share": 1,
    "write": 1
   },
@@ -225,8 +234,6 @@
    "write": 1
   },
   {
-   "amend": 1,
-   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -234,9 +241,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Travel Agent",
+   "role": "Airport Authority Personnel",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
