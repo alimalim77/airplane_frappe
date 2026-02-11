@@ -157,7 +157,7 @@ def get_context(context):
 ```
 
 **Screenshot:**
-![Shop List Page](assets/shop_list_page_1770794113770.png)
+![Shop List Page](assets/shop_list_page_1770794036811.png)
 
 ### 3.2 Shop Details Page
 **URL**: `/shops/details?shop={shop_name}`
