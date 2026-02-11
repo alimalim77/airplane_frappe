@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ shop.name1 or shop.name }} - Shop Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+
+<body>
+    <nav>
+        <a href="/shops" class="brand">🛍️ Airport Shops</a>
+    </nav>
+
+    <main>
+        <div style="max-width: 700px; margin: 2rem auto; padding: 0 1rem;">
+            <a href="/shops">← Back to all shops</a>
+
+            <h1>{{ shop.name1 or shop.name }}</h1>
+
+            <article class="card" style="padding: 1.5rem; margin-top: 1rem;">
+                <h3>Shop Details</h3>
+                <table>
+                    <tr>
+                        <td><strong>Shop Number</strong></td>
+                        <td>{{ shop.shop_number or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Airport</strong></td>
+                        <td>{{ shop.airport or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Area</strong></td>
+                        <td>{{ shop.area_of_shop or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Status</strong></td>
+                        <td>
+                            {% if shop.select_pnxu == "Occupied" %}
+                            <span style="color: #e74c3c; font-weight: bold;">Occupied</span>
+                            {% else %}
+                            <span style="color: #27ae60; font-weight: bold;">Available</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="card" style="padding: 1.5rem; margin-top: 1rem;">
+                <h3>Tenant Information</h3>
+                <table>
+                    <tr>
+                        <td><strong>Tenant Name</strong></td>
+                        <td>{{ shop.tenant_name or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tenant Email</strong></td>
+                        <td>{{ shop.tenant_email or '-' }}</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article class="card" style="padding: 1.5rem; margin-top: 1rem;">
+                <h3>Contract Details</h3>
+                <table>
+                    <tr>
+                        <td><strong>Rent Amount</strong></td>
+                        <td>₹{{ shop.rent_amount or 0 }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contract Expiry</strong></td>
+                        <td>{{ frappe.format(shop.date_of_expiry, {'fieldtype': 'Date'}) if shop.date_of_expiry else '-'
+                            }}</td>
+                    </tr>
+                </table>
+            </article>
+
+            {% if shop.select_pnxu == "Available" %}
+            <div style="margin-top: 1.5rem; text-align: center;">
+                <a href="/shop-lead?shop={{ shop.name | urlencode }}" class="button">
+                    Interested in renting this shop? Apply here →
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+</body>
+
+</html>

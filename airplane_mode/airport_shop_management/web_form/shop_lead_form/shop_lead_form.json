@@ -1,0 +1,55 @@
+{
+    "actions": [],
+    "allow_comments": 1,
+    "allow_multiple": 1,
+    "creation": "2026-02-10 22:30:00.000000",
+    "doc_type": "Shop Lead",
+    "docstatus": 0,
+    "doctype": "Web Form",
+    "idx": 0,
+    "introduction_text": "Interested in leasing a shop at our airport? Fill the form below and we will get back to you.",
+    "is_standard": 1,
+    "login_required": 0,
+    "max_attachment_size": 0,
+    "modified": "2026-02-10 22:30:00.000000",
+    "modified_by": "Administrator",
+    "module": "Airport Shop Management",
+    "name": "Shop Lead Form",
+    "owner": "Administrator",
+    "published": 1,
+    "route": "shop-lead",
+    "show_sidebar": 0,
+    "title": "Shop Lead Web Form",
+    "web_form_fields": [
+        {
+            "fieldname": "lead_name",
+            "fieldtype": "Data",
+            "label": "Full Name",
+            "reqd": 1
+        },
+        {
+            "fieldname": "email",
+            "fieldtype": "Data",
+            "label": "Email",
+            "options": "Email",
+            "reqd": 1
+        },
+        {
+            "fieldname": "phone",
+            "fieldtype": "Data",
+            "label": "Phone"
+        },
+        {
+            "fieldname": "shop",
+            "fieldtype": "Link",
+            "label": "Shop",
+            "options": "Airport Shop",
+            "reqd": 1
+        },
+        {
+            "fieldname": "message",
+            "fieldtype": "Small Text",
+            "label": "Message"
+        }
+    ]
+}
