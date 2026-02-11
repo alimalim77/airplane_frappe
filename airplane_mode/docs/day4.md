@@ -35,9 +35,6 @@ def update_gate_in_tickets(flight_name, gate_number):
         frappe.db.set_value("Airplane Ticket", ticket_name, "gate", gate_number)
     frappe.db.commit()
 ```
-
-![Flight Gate Updates](assets/media__1770788316932.png)
-
 ---
 
 ## 2. Airport Shop Management Module
@@ -79,9 +76,6 @@ A custom Jinja print format was created for `Airport Shop` to generate rent rece
     </table>
 </div>
 ```
-
-![Rent Receipt](assets/media__1770789945024.png)
-
 ### 2.3 Shop Types & Fixtures
 We used **Fixtures** to export default Shop Types (Stall, Walk-through, Normal) so they are created automatically when the app is installed.
 
@@ -92,6 +86,7 @@ fixtures = [
     "Shop Type"  # Exports all Shop Type records
 ]
 ```
+![Shop Types](assets/media__1770788316932.png)
 
 ### 2.4 Filtering Dropdowns
 To ensure users only select **Enabled** shop types, we applied a filter using `set_query` in the client script.
