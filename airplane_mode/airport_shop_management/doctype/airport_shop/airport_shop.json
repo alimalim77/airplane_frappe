@@ -18,6 +18,7 @@
   "shop_number",
   "name1",
   "airport",
+  "shop_type",
   "physical_properties_section",
   "area_of_shop"
  ],
@@ -105,13 +106,19 @@
    "label": "Status",
    "options": "Available\nOccupied",
    "read_only": 1
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Link",
+   "label": "Shop Type",
+   "options": "Shop Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-10 01:27:11.402442",
+ "modified": "2026-02-10 19:20:05.287873",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Airport Shop",

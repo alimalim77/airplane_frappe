@@ -1,0 +1,26 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Shop Type",
+  "enabled": 0,
+  "modified": "2026-02-10 19:24:08.971814",
+  "name": "Stall",
+  "shop_name": "Stall"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Shop Type",
+  "enabled": 0,
+  "modified": "2026-02-10 19:24:17.939012",
+  "name": "Walk-through",
+  "shop_name": "Walk-through"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Shop Type",
+  "enabled": 0,
+  "modified": "2026-02-10 19:24:23.453959",
+  "name": "Normal",
+  "shop_name": "Normal"
+ }
+]

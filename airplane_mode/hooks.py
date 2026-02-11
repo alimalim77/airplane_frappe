@@ -42,7 +42,8 @@ fixtures = [
             "Travel Agent",
             "Flight Crew Member"
         ]]]
-    }
+    },
+    "Shop Type"
 ]
 
 # Apps
