@@ -36,6 +36,8 @@ def update_gate_in_tickets(flight_name, gate_number):
     frappe.db.commit()
 ```
 
+![Flight Gate Updates](assets/media__1770788316932.png)
+
 ---
 
 ## 2. Airport Shop Management Module
@@ -46,6 +48,8 @@ We created the following DocTypes:
 - **Rent Collection**: Child table to track payment history.
 - **Shop Type**: Configurable types (Stall, Walk-through, Normal) with an `enabled` toggle.
 - **Airport Shop Settings**: Single DocType for global configuration (default rent, reminders).
+
+![Domain Models](assets/media__1770792554998.png)
 
 ### 2.2 Rent Receipt (Print Format)
 A custom Jinja print format was created for `Airport Shop` to generate rent receipts.
@@ -76,6 +80,8 @@ A custom Jinja print format was created for `Airport Shop` to generate rent rece
 </div>
 ```
 
+![Rent Receipt](assets/media__1770789945024.png)
+
 ### 2.3 Shop Types & Fixtures
 We used **Fixtures** to export default Shop Types (Stall, Walk-through, Normal) so they are created automatically when the app is installed.
 
@@ -100,6 +106,8 @@ frappe.ui.form.on("Airport Shop", {
     }
 });
 ```
+
+![Filtering Dropdowns](assets/media__1770788357984.png)
 
 ---
 
@@ -157,7 +165,7 @@ def get_context(context):
 ```
 
 **Screenshot:**
-![Shop List Page](assets/shop_list_page_1770794113770.png)
+![Shop List Page](assets/shop_list_page_1770794036811.png)
 
 ### 3.2 Shop Details Page
 **URL**: `/shops/details?shop={shop_name}`
