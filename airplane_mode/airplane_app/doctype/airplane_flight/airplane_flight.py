@@ -42,3 +42,9 @@ def update_gate_in_tickets(flight_name, gate_number):
 	for ticket_name in tickets:
 		frappe.db.set_value("Airplane Ticket", ticket_name, "gate", gate_number)
 	frappe.db.commit()
+
+	frappe.publish_realtime(
+		event="gate_updated",
+		message={"flight": flight_name, "gate": gate_number},
+		user=frappe.session.user
+	)
